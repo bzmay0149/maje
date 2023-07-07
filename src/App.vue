@@ -1,5 +1,7 @@
 <template>
   <nav>
+    <h1>HOLA</h1>
+    <h3>como estas</h3>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </nav>
