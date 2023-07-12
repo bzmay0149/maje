@@ -1,5 +1,8 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <FormContact />
   </div>
 </template>
+<script setup>
+import FormContact from '@/components/FormContact.vue'
+</script>
