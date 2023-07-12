@@ -11,6 +11,6 @@
 import HelloWorld from '@/components/HelloWorld.vue'
 import FooterComp from '@/components/FooterComp.vue'
 
-import formContact from '@/components/fromContact.vue'
+import FormContact from '@/components/FromContact.vue'
 
 </script>
