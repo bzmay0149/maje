@@ -1,12 +1,12 @@
 <template>
     <nav class="navbar navbar-light pt-0">
-      <div class="container-fluid d-flex flex-column align-items-center mt-5">
-        <div class="logo ">
+      <div class="container-fluid d-flex flex-column align-items-center">
+        <div class="logo  pt-4">
           <RouterLink to="/" class="navbar-brand ">
             <img src="../assets/logo-zurtek.png" alt="logo-zurtek" width="160" >
           </RouterLink>
         </div>
-        <div class="list">
+        <div class="list mb-4 m">
           <ul class="nav justify-content-center ">
             <li class="nav-item">
               <RouterLink to="/" class="nav-link pt-0  ">Home</RouterLink>
@@ -30,8 +30,7 @@
   
   <style scoped>
   .container-fluid {
-    background-color  : #16A641;
-  
+    background-color: #16A641;
   }
   
   
