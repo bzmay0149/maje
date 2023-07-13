@@ -23,7 +23,7 @@ section{display: flex;}
 }
 .footer--boxup {
     display: flex;
-    background-color:#5BEC86;
+    background-color:rgb(191, 237, 232)#5BEC86;
 
 }
 .desarrollamos{
