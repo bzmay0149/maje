@@ -44,8 +44,8 @@ aviso-legal{
 .logomaje {
     height: 8rem;
     width: 8rem;
-    margin-top: 5rem;
-    margin-bottom: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 margin-left: auto;
 margin-right: auto;
 
