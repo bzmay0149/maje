@@ -1,8 +1,8 @@
 <template>
   <div class="home">
-    
+    <formContact />
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
-  <FooterComp/>
 </template>
 
 <script setup>
