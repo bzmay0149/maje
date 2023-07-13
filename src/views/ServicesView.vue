@@ -1,5 +1,5 @@
 <template>
-    <h1>Los servicios de Zurtek</h1>
+    <h1>Servicios</h1>
     
 <div class="container">
   <div container--row>
