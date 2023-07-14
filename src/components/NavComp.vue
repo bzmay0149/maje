@@ -38,7 +38,9 @@ function toggleMenu() {
 
 <style scoped>
 .container-fluid {
-  background-color: rgb(191, 237, 232);
+  /* background-color: rgb(191, 237, 232); */
+  /* background-color: #D8C3A5; */
+  background-color: #EFE9E7;
 }
 
 .logo {
