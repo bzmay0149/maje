@@ -8,8 +8,8 @@
             <div class="boxup--center">
                 <h3 class="contacto">Contacto</h3>
                 <div boxup--center--p>
-                <p>C/ Ctra. Bilbao-Galdakao, 10
-                    48004 BILBAO</p>
+                <!-- <p>C/ Ctra. Bilbao-Galdakao, 10
+                    48004 BILBAO</p> -->
                 <p>Tel.: +34 944 029 300 </p> 
                 <p>Fax.: 944 029 303</p>
                 <p>Email: info@grupopenascal.com</p>   
@@ -21,10 +21,14 @@
 
         </section>
         <section class="footer--boxdown">
-            <img class="logomaje" src="../assets/logomajeMayBati.png" alt="MAJE logo">
-            <p class="aviso-legal">
-                Aviso legal | Términos legales
-            </p>       
+            <div box-down--text>
+                <a href="">Aviso legal </a>
+                <p> | </p>
+                <a href=""> Sitemap</a>
+                <p>|  © Copyright 2023 Grupo Peñascal. Todos los derechos reservados |</p>
+                <p>Creado por Maje Digital Solutions</p>
+            </div>
+            <!-- <img class="logomaje" src="../assets/logomajeMayBati.png" alt="MAJE logo">       -->
         </section>
 
 
@@ -42,7 +46,7 @@ section{display: flex;}
     /* background-color:#EFE9E7; */
     background-color: #D8C3A5;
     justify-content: space-around;
-    margin: 1rem;
+    /* margin: 1rem; */
     gap: 1rem;
 }
 .boxup--left  {
@@ -55,20 +59,23 @@ section{display: flex;}
 }
 .contacto {
     text-decoration: underline;
+    margin-top: 2rem;
 }
 .boxup--center {
     background-color: #EFE9E7;
     width: 33%;
     text-align: center;
     align-items: center;
-    width: max-content;
+    /* width: max-content; */
     margin-right: 0;
+    border: solid rgb(227, 217, 217);
 
 }
 .boxup--center--p{
+    padding: 1.5rem;
 }
 .boxup--right {
-    width: 33%;
+    width: fit-content;
 
 }
 
@@ -80,20 +87,29 @@ aviso-legal{
 }
 .footer--boxdown {
 
-    display: flex;
-    flex-direction: column;
+     display: flex;
+    
     /* max-width: fit-; */
     /* background-color:#D17F1F; */
     /* background-color: rgb(176, 239, 231); */
     /* background-color: #D8C3A5; */
+    text-decoration: none;
     background-color:#EFE9E7;
+}
+.footer--boxdown a{
+    text-decoration: none;
+    color: black;
+}
+.box-down--text{
+    display: flex;
+    flex-direction: row;
 }
 
 .logomaje {
     height: 8rem;
     width: 8rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    /* margin-top: 2rem;
+    margin-bottom: 1rem; */
 margin-left: auto;
 margin-right: auto;
 
@@ -104,7 +120,7 @@ margin-right: auto;
         /* margin-top: 5rem;
         margin-bottom: 3rem; */
         margin: 0;
-        padding-bottom: 1rem;
+        /* padding-bottom: 1rem; */
         /* max-width: fit-content;
         max-height: fit-content; */
         flex-direction: column;
@@ -120,8 +136,18 @@ margin-right: auto;
 
 }
 }
+footer {
+    position: relative;
+    /* Add any other styling you want for your footer */
+}
 
-
+.footer-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* Add any other styling you want for the div at the bottom */
+}
 
 </style>
 
