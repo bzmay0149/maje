@@ -1,12 +1,13 @@
 <template>
- 
-   <NavComp />
- 
+  <NavComp />
 
 
-   
- <FooterComp />
+
+
+  
+ 
   <router-view/>
+  <FooterComp />
 </template>
 <script setup>
 import NavComp from './components/NavComp.vue';
