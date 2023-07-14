@@ -1,6 +1,7 @@
 <template>
+  <div class="service-title">
     <h1>Servicios</h1>
-    
+  </div>  
 <div class="container">
   <div container--row>
     <div class="card-group">
@@ -109,6 +110,9 @@
 
 
 <style scoped>
+.service-tittle{
+  margin: 7rem 0;
+}
 /* .container {
     display: flex;
 
