@@ -156,11 +156,15 @@ function toggleMenu() {
 
 .navbar-content {
   width: 100%;
+ 
 }
 
 
 .navbar-logo {
-  background-color: rgb(176, 239, 231);
+background-image: url(../assets/madera.png);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
   width: 100%;
  padding-top:1rem;
   padding-bottom: 1rem;
@@ -168,18 +172,18 @@ function toggleMenu() {
 }
 
 .navbar-links {
-  background-color: #5BEC86;
+  background-color:brown;
   width: 100%;
 }
 
 .nav-link {
-  color: brown;
+  color: #D17F1F;
   font-size: xx-large;
   font-weight: bold;
 }
 
 .nav-link:hover {
-  color: #D17F1F;
+  color: #f6cea1;
 }
 
 .nav-item {
