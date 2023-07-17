@@ -24,10 +24,14 @@
             <img class="logomaje" src="../assets/logomajeMayBati.png" alt="MAJE logo">      
 
             <div class="box-down--text" >
+                <p> | </p>
                 <a href="">Aviso legal </a>
-                <!-- <p> | </p> -->
-                <p>  © Copyright 2023 Grupo Peñascal. Todos los derechos reservados.  </p>
-                <p> Creado por Maje Digital Solutions</p>
+                <p> | </p>
+                <p>© Copyright 2023 Grupo Peñascal. Todos los derechos reservados</p>
+                <p> | </p>
+                <p>Creado por Maje Digital Solutions</p>
+                <p> | </p>
+
             </div>
         </section>
         
@@ -105,13 +109,14 @@ aviso-legal{
 .box-down--text{
     display: flex;
     /* max-width: fit-content; */
-    /* font-size: 0.2rem; */
+    font-size: 0.7rem;
     justify-content: center;
     width: 90%;
     justify-items: center;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    gap: 1rem;
 }
 
 .logomaje {
@@ -122,8 +127,8 @@ aviso-legal{
     margin-bottom: 1rem; */
 margin-left: auto;
 margin-right: auto;
-margin-top: 1rem;
-margin-bottom: 1rem;
+/* margin-top: 1rem; */
+/* margin-bottom: 1rem; */
 text-align: center;
 align-items: center;
 }
