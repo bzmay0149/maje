@@ -1,32 +1,34 @@
-<template>
+<!-- <template>
   <nav class="navbar navbar-light pt-0">
-    <div class="container-fluid d-flex align-items-center">
+    <div class="container-fluid d-flex align-items-center justify-content-center">
       <div class="menu-toggle" @click="toggleMenu">
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
       </div>
-      <div class="logo mx-lg-0 mx-auto">
+    <div class="lala">
+      <div class="logo m-5">
         <RouterLink to="/" class="navbar-brand">
-          <img src="../assets/logo-zurtek.png" alt="logo-zurtek" width="160">
+          <img src="../assets/logo-zurtek.png" class="img ms-5" alt="logo-zurtek" width="160">
         </RouterLink>
       </div>
-      <ul class="menu" :class="{ active: isMenuOpen }">
+      </div>
+      <ul class="menu mt-3 text-center" :class="{ active: isMenuOpen }">
         <li class="nav-item">
-          <RouterLink to="/" class="nav-link pt-0">Home</RouterLink>
+          <RouterLink to="/" class="nav-link pt-0">Inicio</RouterLink>
         </li>
         <li class="nav-item">
           <RouterLink to="/services" class="nav-link pt-0">Servicios</RouterLink>
         </li>
-        <li class="nav-item">
-          <RouterLink to="/about" class="nav-link pt-0">Contacto</RouterLink>
+        <li class="nav-item pe-5">
+          <RouterLink to="/about" class="nav-link pt-0 me-5">Contacto</RouterLink>
         </li>
       </ul>
     </div>
   </nav>
-</template>
+</template> -->
 
-<script setup>
+<!-- <script setup>
 import { ref } from 'vue';
 
 const isMenuOpen = ref(false);
@@ -34,18 +36,17 @@ const isMenuOpen = ref(false);
 function toggleMenu() {
   isMenuOpen.value = !isMenuOpen.value;
 }
-</script>
+</script> -->
 
-<style scoped>
-.container-fluid {
-  /* background-color: rgb(191, 237, 232); */
+<!-- <style scoped>
+.lala{
+  /* background-color: rgb(180, 101, 101); */
   /* background-color: #D8C3A5; */
   background-color: #EFE9E7;
-}
-
-.logo {
   text-align: center;
 }
+
+
 
 .list {
   text-align: center;
@@ -55,6 +56,7 @@ function toggleMenu() {
   color: #795225;
   font-size: x-large;
   font-weight: bold;
+  margin-right: 6rem;
 }
 
 .nav-link:hover {
@@ -83,7 +85,7 @@ function toggleMenu() {
   font-weight: bold;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px ) {
   .menu {
     display: none;
   }
@@ -108,6 +110,98 @@ function toggleMenu() {
   .logo {
     text-align: center;
     margin-left: 0;
+  }
+}
+</style> -->
+
+
+<template>
+  <div>
+    <nav class="navbar navbar-light">
+      <div class="navbar-content">
+        <div class="navbar-logo">
+          <router-link to="/" class="navbar-brand">
+            <img src="../assets/logo-zurtek.png" alt="logo-zurtek" width="160">
+          </router-link>
+        </div>
+        
+        <div class="navbar-links">
+          <ul class="navbar-nav d-flex flex-row">
+            <li class="nav-item">
+              <router-link to="/" class="nav-link">Inicio</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link to="/services" class="nav-link">Servicios</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link to="/about" class="nav-link">Contacto</router-link>
+            </li>
+           
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</template>
+
+<script setup>  
+
+</script>
+
+<style scoped>
+.navbar {
+  background-color: transparent;
+  padding: 0%;
+}
+
+.navbar-content {
+  width: 100%;
+}
+
+
+.navbar-logo {
+  background-color: rgb(176, 239, 231);
+  width: 100%;
+ padding-top:1rem;
+  padding-bottom: 1rem;
+ 
+}
+
+.navbar-links {
+  background-color: #5BEC86;
+  width: 100%;
+}
+
+.nav-link {
+  color: brown;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #D17F1F;
+}
+
+.nav-item {
+ margin-top: 1rem;
+  margin-left: 16rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 1200px) {
+  .nav-item {
+    margin-top: 1.5rem;
+    margin-left: 7.6rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav-item {
+    
+    margin-left: 2.8rem;
+  }
+  .nav-link {
+    font-size: large;
   }
 }
 </style>
