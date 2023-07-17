@@ -1,13 +1,10 @@
 <template>
-  <div class="home">
-    <formContact />
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+ <HomeComp />
 </template>
 
 <script setup>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import HomeComp from '@/components/HomeComp.vue'
 
 
 
