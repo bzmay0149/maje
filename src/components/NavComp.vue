@@ -205,7 +205,7 @@ background-position: center;
     margin-left: 2.8rem;
   } */
   .nav-link {
-    font-size: x-large;
+    font-size: medium;
   }
 }
 </style>
