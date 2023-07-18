@@ -6,25 +6,25 @@
   <div container--row>
     <div class="card-group">
       <div class="card">
-        <img src="../assets/surgery-room.jpg" class="card-img-top" alt="...">
+        <img src="../assets/colocacion-suelo-madera.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <h5 class="card-title">Colocación suelo de madera</h5>
+          <p class="card-text">Trabajamos con todo tipo de maderas y tenemos máxima flexibilidad para hacer proyectos personalizados.</p>
           <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
     </div>
       <div class="card">
         <img src="../assets/laser-cut-heart.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <h5 class="card-title">Corte láser</h5>
+          <p class="card-text">Nuestra maquinaría laser nos permite hacer cortes precisos y grabados.</p>
           <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
       </div>
       <div class="card">
         <img src="../assets/laser-wood-cutting.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
+          <h5 class="card-title">Corte laser</h5>
           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
           <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
@@ -44,16 +44,16 @@
       <div class="card">
         <img src="../assets/laser-wood.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <h5 class="card-title">Corte laser</h5>
+          <p class="card-text"> .</p>
           <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
       </div>
       <div class="card">
-        <img src="../assets/laser-wood2.jpg" class="card-img-top" alt="...">
+        <img src="../assets/kitchen-halfdone.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <h5 class="card-title">Montaje de cocinas</h5>
+          <p class="card-text">Montamos y diseñamos cocinas</p>
           <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
       </div>
@@ -61,26 +61,26 @@
   <div container--row>
     <div class="card-group">
       <div class="card">
-        <img src="../assets/vertical-garden.jpeg" class="card-img-top" alt="...">
+        <img src="../assets/drawer-instllation" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <h5 class="card-title">Montaje y diseño a medida de muebles</h5>
+          <p class="card-text">Montamos y diseñamos muebles a medida.</p>
           <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
     </div>
       <div class="card">
         <img src="../assets/vertical-orchard.jpeg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <h5 class="card-title">Diseñamos huertos verticales</h5>
+          <p class="card-text">Realizamos proyectos para jardines y huertos verticales.</p>
           <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
       </div>
       <div class="card">
         <img src="../assets/" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <h5 class="card-title">Tienes una idea</h5>
+          <p class="card-text">Te ayudamos a llevar cualquier idea realizada acabo, sea pequeña o grande, tenemos la capacidad de prototipar, presupuestar y acompañarte en todo el proceso de creación</p>
           <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
       </div>
