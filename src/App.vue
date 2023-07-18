@@ -1,17 +1,12 @@
 <template>
   <NavComp />
 
-
-
-
-  
- 
-  <router-view/>
+  <router-view />
   <FooterComp />
 </template>
 <script setup>
-import NavComp from './components/NavComp.vue';
-import FooterComp from './components/FooterComp.vue';
+import NavComp from "./components/NavComp.vue";
+import FooterComp from "./components/FooterComp.vue";
 </script>
 
 <style>
@@ -20,15 +15,10 @@ import FooterComp from './components/FooterComp.vue';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  
-  
+  box-sizing: border-box;
 }
 
 nav {
   padding: 30px;
 }
-
-
-
-
 </style>
