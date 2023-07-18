@@ -1,5 +1,9 @@
 <script setup>
 import { ref } from "vue";
+import { useRouter } from "vue-router";
+import Cookies from "js-cookie";
+
+const router = useRouter();
 
 const formulario = ref({
   nombre: "",
@@ -19,6 +23,13 @@ const submitForm = () => {
   mostrarDatosIntroducidos.value = true;
 };
 console.log(formulario);
+
+const logout = () => {
+ Cookies.remove("token");
+ router.push("/login");
+
+}
+
 </script>
 
 <template>
@@ -150,6 +161,7 @@ console.log(formulario);
       </div>
       <button type="submit" class="btn btn-primary mt-5">Enviar</button>
     </form>
+    <button @click="logout">Cerrar sesión</button>
 
     <!-- Mostrar los datos introducidos -->
     <div class="datos-introducidos mt-5" v-if="mostrarDatosIntroducidos">

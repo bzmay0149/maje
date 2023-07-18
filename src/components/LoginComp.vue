@@ -1,30 +1,35 @@
 <script setup>
 import { ref } from "vue";
 import axios from "axios";
-import cors from "cors";
-
-cors();
-
-cors(axios);
+import { useRouter } from "vue-router";
+import Cookies from "js-cookie";
 
 // Variables reactivas para almacenar los datos de los campos de entrada
 const username = ref("");
 const password = ref("");
 
+// Obtener la instancia de Vue Router
+const router = useRouter();
+
 const handleSubmit = async () => {
   try {
-    await axios.post("http://127.0.0.1:5000/login", {
+    const response = await axios.post("http://127.0.0.1:5000/login", {
       username: username.value,
       password: password.value,
     });
 
-    console.log("user", username.value);
-    console.log("password", password.value);
+    const token = response.data;
+    console.log(token);
+
+    Cookies.set("token", token);
+    router.push("/intranet");
   } catch (error) {
     console.log(error);
   }
 };
 </script>
+
+
 <template>
   <div class="w-50 mx-auto mb-5">
     <h3 class="mt-5">Login Administrador</h3>

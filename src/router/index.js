@@ -4,6 +4,7 @@ import AboutView from '../views/AboutView.vue'
 import IntranetView from '../views/IntranetView.vue'
 import ServicesView from '../views/ServicesView.vue'  
 import LoginView from '../views/LoginView.vue'
+import Cookies from 'js-cookie';
 
 const routes = [
   {
@@ -17,9 +18,12 @@ const routes = [
     component: AboutView
   },
   {
-    path: '/intranet',
-    name: 'intranet',
-    component: IntranetView
+    path: "/intranet",
+    name: "Intranet",
+    component: IntranetView,
+    meta: {
+      requiresAuth: true
+    }
   },
   {
     path: '/services',
@@ -37,5 +41,18 @@ const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes
 })
+
+function isLoggedIn() {
+  const token = Cookies.get("token");
+  return !!token;
+}
+
+router.beforeEach((to, from, next) => {
+  if (to.meta.requiresAuth && !isLoggedIn()) {
+    next({ name: "login" });
+  } else {
+    next();
+  }
+});
 
 export default router
