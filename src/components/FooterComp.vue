@@ -17,20 +17,24 @@
                 </div>                 
             </div>
             <div class="boxup--right">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.1883084902183!2d-2.909483225210002!3d43.24747507857947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e4fa9723128c7%3A0xbc3542d2f3c75723!2sPe%C3%B1ascal%20Kooperatiba!5e0!3m2!1ses!2ses!4v1689324994624!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>       </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5812.377006165015!2d-2.906908!3d43.247471!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e4fa9723128c7%3A0xbc3542d2f3c75723!2sPe%C3%B1ascal%20Kooperatiba!5e0!3m2!1ses!2ses!4v1689591179755!5m2!1ses!2ses" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>       </div>
 
         </section>
         <section class="footer--boxdown">
-            <div box-down--text>
+            <img class="logomaje" src="../assets/logomajeMayBati.png" alt="MAJE logo">      
+
+            <div class="box-down--text" >
+                <p> | </p>
                 <a href="">Aviso legal </a>
                 <p> | </p>
-                <a href=""> Sitemap</a>
-                <p>|  © Copyright 2023 Grupo Peñascal. Todos los derechos reservados |</p>
+                <p>© Copyright 2023 Grupo Peñascal. Todos los derechos reservados</p>
+                <p> | </p>
                 <p>Creado por Maje Digital Solutions</p>
-            </div>
-            <!-- <img class="logomaje" src="../assets/logomajeMayBati.png" alt="MAJE logo">       -->
-        </section>
+                <p> | </p>
 
+            </div>
+        </section>
+        
 
 
     </footer>    
@@ -48,11 +52,12 @@ section{display: flex;}
     justify-content: space-around;
     /* margin: 1rem; */
     gap: 1rem;
+    align-items: center;
 }
 .boxup--left  {
     /* margin: auto; */
     /* max-width: 25%; */
-    width: 33%;
+    width: 38%;
 
     align-items: center;
     text-align: center;
@@ -62,20 +67,20 @@ section{display: flex;}
     margin-top: 2rem;
 }
 .boxup--center {
-    background-color: #EFE9E7;
-    width: 33%;
+    /* background-color: #EFE9E7; */
+    width: 38%;
     text-align: center;
     align-items: center;
     /* width: max-content; */
     margin-right: 0;
-    border: solid rgb(227, 217, 217);
+    /* border: solid rgb(227, 217, 217); */
 
 }
 .boxup--center--p{
     padding: 1.5rem;
 }
 .boxup--right {
-    width: fit-content;
+    width: 24%;
 
 }
 
@@ -88,6 +93,7 @@ aviso-legal{
 .footer--boxdown {
 
      display: flex;
+     flex-direction: column;
     
     /* max-width: fit-; */
     /* background-color:#D17F1F; */
@@ -102,17 +108,29 @@ aviso-legal{
 }
 .box-down--text{
     display: flex;
-    flex-direction: row;
+    /* max-width: fit-content; */
+    font-size: 0.7rem;
+    justify-content: center;
+    width: 90%;
+    justify-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 1rem;
 }
 
 .logomaje {
+    display: flex;
     height: 8rem;
     width: 8rem;
     /* margin-top: 2rem;
     margin-bottom: 1rem; */
 margin-left: auto;
 margin-right: auto;
-
+/* margin-top: 1rem; */
+/* margin-bottom: 1rem; */
+text-align: center;
+align-items: center;
 }
 @media only screen and (max-width: 800px) {
     .footer--boxup {
@@ -124,7 +142,15 @@ margin-right: auto;
         /* max-width: fit-content;
         max-height: fit-content; */
         flex-direction: column;
-        background-color: rgb(191, 237, 232);
+        background-color: #D8C3A5;
+        align-items: center;
+        padding-bottom: 1rem;
+    }
+    .footer--boxdown{
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        
     }
     .logomaje {
     height: 8rem;
@@ -135,18 +161,21 @@ margin-right: auto;
     margin-right: auto;
 
 }
+.logopenascal{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
 }
-footer {
-    position: relative;
-    /* Add any other styling you want for your footer */
+.boxup--right{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-.footer-bottom {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    /* Add any other styling you want for the div at the bottom */
+
 }
 
 </style>

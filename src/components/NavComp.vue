@@ -187,25 +187,22 @@ background-position: center;
 }
 
 .nav-item {
- margin-top: 1rem;
+ /* margin-top: 1rem;
   margin-left: 16rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2rem; */
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@media (max-width: 1200px) {
-  .nav-item {
-    margin-top: 1.5rem;
-    margin-left: 7.6rem;
-  }
-}
 
-@media (max-width: 767px) {
-  .nav-item {
+
+@media (max-width: 680px) {
+  /* .nav-item {
     
     margin-left: 2.8rem;
-  }
+  } */
   .nav-link {
-    font-size: large;
+    font-size: x-large;
   }
 }
 </style>
