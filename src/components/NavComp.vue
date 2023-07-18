@@ -136,6 +136,9 @@ function toggleMenu() {
             <li class="nav-item">
               <router-link to="/about" class="nav-link">Contacto</router-link>
             </li>
+            <li class="nav-item">
+              <router-link to="/login" class="nav-link">Administrador</router-link>
+            </li>
            
           </ul>
         </div>
@@ -172,7 +175,7 @@ background-position: center;
 }
 
 .navbar-links {
-  background-color:brown;
+  background-color:rgb(75, 15, 15);
   width: 100%;
 }
 
