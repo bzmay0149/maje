@@ -80,10 +80,7 @@ section{display: flex;}
 .boxup--center--p{
     padding: 1.5rem;
 }
-.boxup--right {
-    width: 24%;
 
-}
 
 .desarrollamos{
     margin: auto;
@@ -136,6 +133,7 @@ align-items: center;
 
 iframe{
     padding: 1rem;
+
 }
 @media only screen and (max-width: 800px) {
     .footer--boxup {
