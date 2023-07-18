@@ -142,7 +142,7 @@ align-items: center;
         /* max-width: fit-content;
         max-height: fit-content; */
         flex-direction: column;
-        background-color: rgb(191, 237, 232);
+        background-color: #D8C3A5;
         align-items: center;
         padding-bottom: 1rem;
     }
