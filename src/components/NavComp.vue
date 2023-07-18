@@ -192,6 +192,7 @@ background-position: center;
   margin-bottom: 2rem;
 }
 
+
 @media (max-width: 1200px) {
   .nav-item {
     margin-top: 1.5rem;

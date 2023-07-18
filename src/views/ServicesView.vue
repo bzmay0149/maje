@@ -6,7 +6,7 @@
   <div container--row>
     <div class="card-group">
       <div class="card">
-        <img src="../assets/colocacion-suelo-madera.jpg" class="card-img-top" alt="...">
+        <img src="../assets/suelo2-43.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Colocación suelo de madera</h5>
           <p class="card-text">Trabajamos con todo tipo de maderas y tenemos máxima flexibilidad para hacer proyectos personalizados.</p>
@@ -14,9 +14,9 @@
         </div>
     </div>
       <div class="card">
-        <img src="../assets/laser-cut-heart.jpg" class="card-img-top" alt="...">
+        <img src="../assets/laser-cut-heart43.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Corte láser</h5>
+          <h5 class="card-title">Grabado láser</h5>
           <p class="card-text">Nuestra maquinaría laser nos permite hacer cortes precisos y grabados.</p>
           <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
@@ -25,7 +25,7 @@
         <img src="../assets/laser-wood-cutting.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Corte laser</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <p class="card-text">La precisión del laser aplicada al trabajo con madera. El limite es tu imaginación.</p>
           <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
       </div>
@@ -36,21 +36,21 @@
       <div class="card">
         <img src="../assets/Phenolic-board-sevilla.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <h5 class="card-title">Paneles fenólicos</h5>
+          <p class="card-text">Tenemos todo el instrumental para realizar trabajo con paneles fenólicos.</p>
           <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
     </div>
       <div class="card">
-        <img src="../assets/laser-wood.jpg" class="card-img-top" alt="...">
+        <img src="../assets/laser-wood43.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Corte laser</h5>
-          <p class="card-text"> .</p>
+          <h5 class="card-title">MEcanizado laser</h5>
+          <p class="card-text">Alta precisión en la confección de las piezas necesarias para tu proyecto.</p>
           <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
       </div>
       <div class="card">
-        <img src="../assets/kitchen-halfdone.jpg" class="card-img-top" alt="...">
+        <img src="../assets/kitchen-halfdone43.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Montaje de cocinas</h5>
           <p class="card-text">Montamos y diseñamos cocinas</p>
@@ -61,7 +61,7 @@
   <div container--row>
     <div class="card-group">
       <div class="card">
-        <img src="../assets/drawer-instllation" class="card-img-top" alt="...">
+        <img src="../assets/drawer-installation43.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Montaje y diseño a medida de muebles</h5>
           <p class="card-text">Montamos y diseñamos muebles a medida.</p>
@@ -69,7 +69,7 @@
         </div>
     </div>
       <div class="card">
-        <img src="../assets/vertical-orchard.jpeg" class="card-img-top" alt="...">
+        <img src="../assets/vertical-orchard.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Diseñamos huertos verticales</h5>
           <p class="card-text">Realizamos proyectos para jardines y huertos verticales.</p>
@@ -77,10 +77,10 @@
         </div>
       </div>
       <div class="card">
-        <img src="../assets/" alt="...">
+        <img src="../assets/logo-zurtek43.png" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Tienes una idea</h5>
-          <p class="card-text">Te ayudamos a llevar cualquier idea realizada acabo, sea pequeña o grande, tenemos la capacidad de prototipar, presupuestar y acompañarte en todo el proceso de creación</p>
+          <h5 class="card-title">¿Tienes una idea?</h5>
+          <p class="card-text">Te ayudamos a llevar cualquier idea realizada acabo, sea pequeña o grande, tenemos la capacidad de prototipar, presupuestar y acompañarte en todo el proceso de creación.</p>
           <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
       </div>
