@@ -18,7 +18,7 @@
         <input class="form-control w-100 mx-auto" type="text" name="password" id="" />
       </div>
       <input
-        class="btn btn-primary mt-5"
+        class="btn mt-5"
         type="submit"
         value="Iniciar sesión"
       />
@@ -31,6 +31,11 @@
 
 <style scoped>
 .login{
-    background-color: #dc6d3e;
+    background-color: #f6cea1;
+}
+input[type="submit"]{
+  background-color: rgb(75, 15, 15);
+  color: #f6cea1;
+  width: 50%;
 }
 </style>

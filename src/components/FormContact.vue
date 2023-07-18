@@ -37,7 +37,7 @@
 
               
             
-              <input type="submit" class="btn btn-primary col-12" id="button" value="Enviar Email" >
+              <input type="submit" class="btn col-12" id="button" value="Enviar Email" >
             </div></form>
           </div>
         </div>
@@ -64,7 +64,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped> 
 .custom-form {
   border: 1px solid rgba(0, 0, 0, 0.125);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
@@ -86,6 +86,13 @@ margin-bottom: 1.2rem;
   margin-top: 1.2rem;
   margin-bottom: 1.2rem;
 }
+.card-header, .btn{
+  background-color: rgb(75, 15, 15);
+  color: bisque;
+}
+.card-body{
+  background-color: #f6cea1;
+} 
 </style>
 
 
