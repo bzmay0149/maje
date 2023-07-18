@@ -1,5 +1,5 @@
 <template>
- <HomeComp />0
+ <HomeComp />
 </template>
 
 <script setup>
