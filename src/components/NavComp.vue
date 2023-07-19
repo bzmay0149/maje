@@ -86,14 +86,7 @@
 
 
 @media (max-width: 680px) {
-    /* .nav-item {
-    
-    margin-left: 2.8rem;
-  } */
-  .nav-link {
-    font-size: medium;
-
-   .nav-link {
+.nav-link {
     font-size: x-large;
   }
 }

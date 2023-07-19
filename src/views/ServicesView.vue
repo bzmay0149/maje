@@ -25,7 +25,7 @@
         <img src="../assets/laser-wood-cutting.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Corte laser</h5>
-          <p class="card-text">La precisión del laser aplicada al trabajo con madera. El limite es tu imaginación.</p>
+          <p class="card-text">La precisión del laser aplicada al trabajo con madera. El límite es tu imaginación.</p>
           <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
       </div>
@@ -69,7 +69,7 @@
         </div>
     </div>
       <div class="card">
-        <img src="../assets/vertical-orchard.jpg" class="card-img-top" alt="...">
+        <img src="../assets/vertical-farm-hydroponics43.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Diseñamos huertos verticales</h5>
           <p class="card-text">Realizamos proyectos para jardines y huertos verticales.</p>
@@ -77,10 +77,10 @@
         </div>
       </div>
       <div class="card">
-        <img src="../assets/logo-zurtek43.png" alt="...">
+        <img class="zurtek43serv" src="../assets/logo-zurtek43.png" alt="..." >
         <div class="card-body">
           <h5 class="card-title">¿Tienes una idea?</h5>
-          <p class="card-text">Te ayudamos a llevar cualquier idea realizada acabo, sea pequeña o grande, tenemos la capacidad de prototipar, presupuestar y acompañarte en todo el proceso de creación.</p>
+          <p class="card-text">Te ayudamos a llevar cualquier idea  acabo, sea pequeña o grande, tenemos la capacidad de prototipar, presupuestar y acompañarte en todo el proceso de creación.</p>
           <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
       </div>
@@ -112,6 +112,9 @@
 <style scoped>
 .service-tittle{
   margin: 7rem 0;
+}
+.zurtek43serv{
+  border: solid 0.01rem  rgb(224, 215, 215);
 }
 /* .container {
     display: flex;
