@@ -26,8 +26,8 @@
    
     .align-items-center{
       margin: 0%;
-      padding-left: 0%;
-      padding-right: 0%;
+      padding-left: auto;
+      padding-right: auto;
     }
   
    
