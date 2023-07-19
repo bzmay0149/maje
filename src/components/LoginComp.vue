@@ -1,33 +1,47 @@
-<template>
-  <div class="w-50  mx-auto mb-5">
-    <h3 class="mt-5">Login Administrador</h3>
-    <form class="login form mt-5 p-5  rounded shadow d-flex flex-column align-items-center" action="">
+<script setup>
+import { ref } from "vue";
+import axios from "axios";
+import { useRouter } from "vue-router";
+import Cookies from "js-cookie";
 
-      <div class="nombre col-sm-12 col-md-6">
-        <label class="form-label" for="username">Nombre de usuario</label>
-        <input
-          class="form-control w-100 mx-auto"
-          type="text"
-          name="username"
-          id=""
-        />
-      </div>
+// Variables reactivas para almacenar los datos de los campos de entrada
+const username = ref("");
+const password = ref("");
 
-      <div class="contraseña mt-5 col-sm-12 col-md-6 ">
-        <label class="form-label" for="password">Contraseña</label>
-        <input class="form-control w-100 mx-auto" type="text" name="password" id="" />
-      </div>
-      <input
-        class="btn mt-5"
-        type="submit"
-        value="Iniciar sesión"
-      />
-    </form>
-  </div>
-</template>
-<script script>
+// Obtener la instancia de Vue Router
+const router = useRouter();
+
+const handleSubmit = async () => {
+  try {
+    const response = await axios.post("http://127.0.0.1:5000/login", {
+      username: username.value,
+      password: password.value,
+    });
+
+    const token = response.data;
+    console.log(token);
+
+    Cookies.set("token", token);
+    router.push("/intranet");
+  } catch (error) {
+    console.log(error);
+  }
+};
 </script>
 
+
+<template>
+  <div class="w-50 mx-auto mb-5">
+    <h3 class="mt-5">Login Administrador</h3>
+
+    <div class="formulario">
+      <input type="text" v-model="username">
+      <input type="password" v-model="password">
+      <button @click="handleSubmit">Login</button>
+    </div>
+    
+  </div>
+</template>
 
 <style scoped>
 .login{
