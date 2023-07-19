@@ -33,7 +33,7 @@ const handleSubmit = async () => {
 <template>
   <div class="w-50  mx-auto mb-5">
     <h3 class="mt-5">Login Administrador</h3>
-    <form class="login form mt-5 p-5  rounded shadow d-flex flex-column align-items-center" @click="handleSubmit">
+    <div class="login form mt-5 p-5  rounded shadow d-flex flex-column align-items-center" >
 
       <div class="nombre col-sm-12 col-md-6">
         <label class="form-label" for="username">Nombre de usuario</label>
@@ -47,12 +47,10 @@ const handleSubmit = async () => {
         <label class="form-label" for="password">Contraseña</label>
         <input class="form-control w-100 mx-auto" name="password" type="password" v-model="password" />
       </div>
-      <input
-        class="btn mt-5"
-        type="submit"
-        value="Iniciar sesión"
-      />
-    </form>
+
+      <button class="btn mt-5"
+        @click="handleSubmit"> Iniciar sesión</button>
+    </div>
 
   </div>
   
@@ -62,5 +60,12 @@ const handleSubmit = async () => {
 
 
 <style scoped>
-
+.login{
+    background-color: #f6cea1;
+}
+input[type="submit"]{
+  background-color: rgb(75, 15, 15);
+  color: #f6cea1;
+  width: 50%;
+}
 </style>
