@@ -29,25 +29,29 @@ const handleSubmit = async () => {
 };
 </script>
 
-
 <template>
-  <div class="w-50 mx-auto mb-5">
+  <div class="w-100 mx-auto mb-5 container-lg p-lg-5 ">
     <h3 class="mt-5">Login Administrador</h3>
 
-    <div class="formulario">
-      <input type="text" v-model="username">
-      <input type="password" v-model="password">
-      <button @click="handleSubmit">Login</button>
+    <div class="formulario  d-flex flex-column gap-3 w-50 mx-auto mt-5 border border-4 shadow p-5">
+
+      <label class="form-label fs-2" for="username">Nombre de usuario</label>
+      <input name="username" type="text" v-model="username" />
+
+      <label class="form-label fs-2" for="password">Contraseña</label>
+      <input class="input-password" name="password" type="password" v-model="password" />
+
+      <button class="mt-5" @click="handleSubmit">Login</button>
+
     </div>
-    
   </div>
 </template>
 
 <style scoped>
-.login{
-    background-color: #f6cea1;
+.login {
+  background-color: #f6cea1;
 }
-input[type="submit"]{
+input[type="submit"] {
   background-color: rgb(75, 15, 15);
   color: #f6cea1;
   width: 50%;

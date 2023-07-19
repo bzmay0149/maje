@@ -59,15 +59,6 @@
 @media (max-width: 1200px) {
   .card-title {
     font-size: large; /* Tamaño de letra ajustado */
-<<<<<<< HEAD
-  }
-
-  .align-items-center {
-    margin: 0%;
-    padding-left: 0%;
-    padding-right: 0%;
-  }
-=======
     }
    
     .align-items-center{
@@ -77,7 +68,6 @@
     }
   
    
->>>>>>> MT
 
   .text-md-center {
     text-align: center; /* Alineación centrada en tamaño de tablet */
