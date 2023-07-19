@@ -80,7 +80,7 @@
         <img class="zurtek43serv" src="../assets/logo-zurtek43.png" alt="..." >
         <div class="card-body">
           <h5 class="card-title">¿Tienes una idea?</h5>
-          <p class="card-text">Te ayudamos a llevar cualquier idea  acabo, sea pequeña o grande, tenemos la capacidad de prototipar, presupuestar y acompañarte en todo el proceso de creación.</p>
+          <p class="card-text">Te ayudamos a llevarla acabo. Sea pequeña o grande, tenemos la capacidad de prototipar, presupuestar y acompañarte en todo el proceso de creación.</p>
           <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
       </div>
