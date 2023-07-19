@@ -1,11 +1,13 @@
 # maje
 This is a web project (SPA) for the woodwork department of Peñascal(Bilbo). Our FullStack bootcamp share building with them.
+
 We were asked to show a glance of the work they make with a simple design, create a  contact section for inquiries, and finally an intranet where administration can store the information, in a database, of potential and actual clients.
 ## Project setup
 
 ```
 npm install
 ```
+npm install -g @vue/cli
 
 ### Compiles and hot-reloads for development
 ```
