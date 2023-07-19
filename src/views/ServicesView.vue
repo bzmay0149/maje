@@ -44,7 +44,7 @@
       <div class="card">
         <img src="../assets/laser-wood43.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">MEcanizado laser</h5>
+          <h5 class="card-title">Mecanizado laser</h5>
           <p class="card-text">Alta precisión en la confección de las piezas necesarias para tu proyecto.</p>
           <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
