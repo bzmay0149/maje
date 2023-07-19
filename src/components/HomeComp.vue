@@ -56,6 +56,8 @@
 <script setup></script>
 
 <style scoped>
+
+
 .mobile-text{
   text-align: justify;
 }
@@ -69,10 +71,6 @@
 @media (max-width: 1200px) {
   .card-title {
     font-size: large; /* Tamaño de letra ajustado */
-<<<<<<< HEAD
-
-=======
->>>>>>> d000a4ac62ee36a08aac32c3297556230ca8c804
     }
     .text-center{
   margin-top: 3em;

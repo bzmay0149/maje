@@ -38,6 +38,15 @@
 </script>
 
 <style scoped>
+.router-link-active {
+  background-color: rgba(241, 244, 247, 0.582);
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+  border: #f1ece6;
+ 
+  
+}
 .navbar {
   background-color: transparent;
   padding: 0%;
