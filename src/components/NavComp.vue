@@ -87,7 +87,7 @@
 
 @media (max-width: 680px) {
    .nav-link {
-    font-size: x-large;
+    font-size: medium;
   }
 }
 </style>

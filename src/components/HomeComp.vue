@@ -1,5 +1,5 @@
 <template>
-  <div class="row row-cols-1 row-cols-md-2 g-4 m-5">
+  <!-- <div class="row row-cols-1 row-cols-md-2 g-4 m-5">
     <div class="col">
       <div class="card border-0">
         <img
@@ -26,25 +26,25 @@
         </p>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <div class="row justify-content-evenly">
     <div class="col-md-6">
       <img
-        class="img-fluid rounded mx-auto p-3 d-block"
+        class="img-fluid  mx-auto p-3 mt-5  d-block"
         src="../assets/surgery-room.jpg"
         alt=""
       />
     </div>
     <div class="col-md-5">
-      <h5 class="text-center mx-auto">Título</h5>
+      <h1 class="text-center mx-auto ">Título</h1>
       <p class="mobile-text">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste eum porro
         harum optio dicta voluptatum, deserunt modi iure, excepturi nisi maxime
         ea assumenda nostrum eius distinctio vitae! Autem, odit architecto!
       </p>
-      <br />
-      <p class="mobile-text">
+     
+      <p class="mobile-text  mobile-text2">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ab
         fugiat iste dicta tempora? Incidunt porro nemo iure voluptatem, qui
         voluptas at, nobis neque velit in iste praesentium recusandae ducimus!
@@ -56,32 +56,44 @@
 <script setup></script>
 
 <style scoped>
+.mobile-text{
+  text-align: justify;
+}
+.text-center{
+  margin-top: 2em;
+}
+.img-fluid{
+  margin-bottom: 3em;
+  border-radius: 10%;
+}
 @media (max-width: 1200px) {
   .card-title {
     font-size: large; /* Tamaño de letra ajustado */
-<<<<<<< HEAD
-  }
 
-  .align-items-center {
-    margin: 0%;
-    padding-left: 0%;
-    padding-right: 0%;
-  }
-=======
     }
-   
+    .text-center{
+  margin-top: 3em;
+  font-size: x-large; 
+  
+    }
+    .movile-text{
+     
+     font-size: large; 
+    }
     .align-items-center{
       margin: 0%;
       padding-left: auto;
       padding-right: auto;
     }
+    .mobile-text{
+      font-size: small; 
+    }
   
    
->>>>>>> MT
 
   .text-md-center {
     text-align: center; /* Alineación centrada en tamaño de tablet */
-    font-size: x-small;
+    font-size: small;
   }
 }
 
@@ -89,7 +101,19 @@
   .mobile-text {
     text-align: justify;
     margin: 1rem;
-    padding: 10px;
+     padding: 5px; 
+    
+
   }
+  .text-center{
+    margin-top: .5em;
+  }
+  .img-fluid{
+    margin-bottom: .2em;
+}
+.mobile-text2{
+  margin-bottom: 3em;
+  margin-top: 0%;
+}
 }
 </style>
