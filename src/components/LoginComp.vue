@@ -48,7 +48,7 @@ const handleSubmit = async () => {
         <input class="form-control w-100 mx-auto" name="password" type="password" v-model="password" />
       </div>
 
-      <button class="btn mt-5"
+      <button class="btn  mt-5"
         @click="handleSubmit"> Iniciar sesión</button>
     </div>
 
@@ -63,7 +63,7 @@ const handleSubmit = async () => {
 .login{
     background-color: #f6cea1;
 }
-input[type="submit"]{
+.btn{
   background-color: rgb(75, 15, 15);
   color: #f6cea1;
   width: 50%;
