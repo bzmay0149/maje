@@ -37,18 +37,18 @@
       />
     </div>
     <div class="col-md-5">
-      <h1 class="text-center mx-auto ">Título</h1>
+      <h1 class="text-center mx-auto ">Zurtek, S.L.</h1>
       <p class="mobile-text">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste eum porro
-        harum optio dicta voluptatum, deserunt modi iure, excepturi nisi maxime
-        ea assumenda nostrum eius distinctio vitae! Autem, odit architecto!
+        Zurtek, S.L. es una empresa de inserción dentro del sector de la madera. Se ha creado en el año 2004 promovida por la cooperativa Peñascal, S.Coop. <br>
+
+Entre sus objetivos está la inserción laboral de personas en riesgo de exclusión a través de la fabricación y montaje de todo tipo de mobiliario y elementos de carpintería, con el fin de que las personas en puestos de inserción adquieran las competencias necesarias para insertarse en el mercado laboral ordinario dentro de dicho sector.
+<br>
+<span>Servicios:</span>
+<br>
+Fabricación,montaje e instalación de mobiliario y elementos de carpintería. Diseño a medida de todo tipo de mobiliario  y soluciones constructivas. Desarrollo de productos dedicados a la agricultura urbana, vertical.
       </p>
      
-      <p class="mobile-text  mobile-text2">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ab
-        fugiat iste dicta tempora? Incidunt porro nemo iure voluptatem, qui
-        voluptas at, nobis neque velit in iste praesentium recusandae ducimus!
-      </p>
+      
     </div>
   </div>
 </template>
@@ -61,8 +61,14 @@
 .mobile-text{
   text-align: justify;
 }
+span{
+  font-weight: bold;
+  font-size: x-large;
+  padding-top: 5em;
+}
 .text-center{
   margin-top: 2em;
+  font-weight: bold;
 }
 .img-fluid{
   margin-bottom: 3em;
@@ -70,24 +76,26 @@
 }
 @media (max-width: 1200px) {
   .card-title {
-    font-size: large; /* Tamaño de letra ajustado */
+    font-size: medium; /* Tamaño de letra ajustado */
     }
     .text-center{
-  margin-top: 3em;
-  font-size: x-large; 
+  margin-top: 4em;
+  font-size: large; 
+  margin-bottom: .2em;
   
     }
-    .movile-text{
-     
-     font-size: large; 
+    span{
+      font-size: large;
     }
+   
     .align-items-center{
       margin: 0%;
       padding-left: auto;
       padding-right: auto;
     }
     .mobile-text{
-      font-size: small; 
+      font-size: x-small;
+      
     }
   
    
