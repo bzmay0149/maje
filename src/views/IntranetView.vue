@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div class="mt-5">
+    <div class="link_intranet border border-4 mb-5 d-flex justify-content-evenly ">
     <button
       id="clientes"
       @click="handlemostrarclientes"
@@ -10,16 +11,62 @@
     <button
       id="agregar_clientes"
       @click="handlemostrarAgregarCliente"
-      :class="{ active: mostrarAgregarCliente }"
+      :class=" { active: mostrarAgregarCliente }"
     >
       Agregar Cliente
     </button>
-    <button @click="logout">Cerrar sesión</button>
+    <button class="logout" @click="logout">Cerrar sesión</button>
+  </div>
+
 
     <Clientes v-show="mostrarClientes" />
     <AddCustomer v-show="mostrarAgregarCliente" />
   </div>
 </template>
+
+<style scope>
+#agregar_clientes {
+  padding: 10px 30px;
+  border-radius: 5px;
+  background-color:#943718 ;
+  color: aliceblue;
+  font-size: x-large;
+}
+#agregar_clientes:hover {
+    background-color: #f6cea1;
+    color: #943718;
+
+  }
+
+.logout:hover{
+  background-color: #f6cea1;
+    color: #943718;
+}
+
+#clientes:hover{
+  background-color: #f6cea1;
+    color: #943718;
+}
+
+
+.logout {
+  padding: 10px 30px;
+border-radius: 5px;
+background-color:#943718 ;
+color: aliceblue;
+font-size: x-large;
+}
+
+#clientes{
+  padding: 10px 30px;
+  border-radius: 5px;
+  background-color:#943718 ;
+  color: aliceblue;
+  font-size: x-large;
+}
+
+
+</style>
 
 <script setup>
 import { ref } from 'vue';
