@@ -31,13 +31,13 @@
               </div>
 
               <div class="form-check-inline d-flex align-items-center mb-3">
-  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+  <input type="checkbox" class="form-check-input" id="exampleCheck1" v-model="acceptConditions">
   <label class="form-check-label custom-input mx-2" for="exampleCheck1">Acepto los términos y condiciones</label>
 </div>
 
               
             
-              <input type="submit" class="btn col-12" id="button" value="Enviar Email" >
+              <input type="submit" class="btn col-12" id="button" value="Enviar Email" :disabled="!acceptConditions">
             </div></form>
           </div>
         </div>
@@ -51,6 +51,11 @@ import emailjs from '@emailjs/browser';
 
 
 export default {
+  data() {
+      return {
+        acceptConditions: false
+      }
+    },
   methods: {
     sendEmail() {
       emailjs.sendForm('service_i0nt5ql', 'template_a1rqgpt', this.$refs.form, 'MBrCHCNrZknf2glfZ')
@@ -93,6 +98,14 @@ margin-bottom: 1.2rem;
 .card-body{
   background-color: #f6cea1;
 } 
+.btn:hover{
+   color: bisque;
+  background-color: rgb(75, 15, 15);
+}
+.btn:disabled{
+  color: bisque;
+  background-color: rgb(75, 15, 15);
+}
 </style>
 
 
