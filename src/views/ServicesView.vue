@@ -1,12 +1,14 @@
 <template>
   <div class="service-title">
     <h1>Servicios</h1>
+    <!-- <h2>Zurtek es una empresa de inserción donde trabajamos la madera y sus derivados realizando muebles e instalaciones de calidad y diseño, tanto con materiales tradicionales como innovadores. Atendemos las necesidades tanto del hogar, como de locales comerciales, como oficinas y empresas constructoras.
+</h2> -->
   </div>  
 <div class="container">
   <div container--row>
     <div class="card-group">
       <div class="card">
-        <img src="../assets/suelo2-43.jpg" class="card-img-top" alt="...">
+        <img src="../assets/baño43n.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Colocación suelo de madera</h5>
           <p class="card-text">Trabajamos con todo tipo de maderas y tenemos máxima flexibilidad para hacer proyectos personalizados.</p>
@@ -14,7 +16,7 @@
         </div>
     </div>
       <div class="card">
-        <img src="../assets/laser-cut-heart43.jpg" class="card-img-top" alt="...">
+        <img src="../assets/juego-mesitas-sala43n.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Grabado láser</h5>
           <p class="card-text">Nuestra maquinaría laser nos permite hacer cortes precisos y grabados.</p>
@@ -22,7 +24,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="../assets/laser-wood-cutting.jpg" class="card-img-top" alt="...">
+        <img src="../assets/mesa-mundo43n.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Corte laser</h5>
           <p class="card-text">La precisión del laser aplicada al trabajo con madera. El límite es tu imaginación.</p>
@@ -42,7 +44,7 @@
         </div>
     </div>
       <div class="card">
-        <img src="../assets/laser-wood43.jpg" class="card-img-top" alt="...">
+        <img src="../assets/mesa43n.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Mecanizado laser</h5>
           <p class="card-text">Alta precisión en la confección de las piezas necesarias para tu proyecto.</p>
@@ -50,7 +52,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="../assets/kitchen-halfdone43.jpg" class="card-img-top" alt="...">
+        <img src="../assets/mueble-aparador43n.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Montaje de cocinas</h5>
           <p class="card-text">Montamos y diseñamos cocinas</p>
@@ -61,7 +63,7 @@
   <div container--row>
     <div class="card-group">
       <div class="card">
-        <img src="../assets/drawer-installation43.jpg" class="card-img-top" alt="...">
+        <img src="../assets/mueble-pan43n.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Montaje y diseño a medida de muebles</h5>
           <p class="card-text">Montamos y diseñamos muebles a medida.</p>
@@ -69,7 +71,7 @@
         </div>
     </div>
       <div class="card">
-        <img src="../assets/vertical-farm-hydroponics43.jpg" class="card-img-top" alt="...">
+        <img src="../assets/mueble-pan43n.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Diseñamos huertos verticales</h5>
           <p class="card-text">Realizamos proyectos para jardines y huertos verticales.</p>
@@ -85,6 +87,34 @@
         </div>
       </div>
     </div>
+    <div container--row>
+    <div class="card-group">
+      <div class="card">
+        <img src="../assets/surgery-room43.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Colocación suelo de madera</h5>
+          <p class="card-text">Trabajamos con todo tipo de maderas y tenemos máxima flexibilidad para hacer proyectos personalizados.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+      <div class="card">
+        <img src="../assets/muebles-despacho-oficina43n.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Grabado láser</h5>
+          <p class="card-text">Nuestra maquinaría laser nos permite hacer cortes precisos y grabados.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../assets/puertascorrederas43n.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Corte laser</h5>
+          <p class="card-text">La precisión del laser aplicada al trabajo con madera. El límite es tu imaginación.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
   </div>
   </div>
     
