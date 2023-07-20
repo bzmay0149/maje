@@ -14,7 +14,6 @@ const obtenerClientes = async () => {
     const response = await axios.get("http://127.0.0.1:5000");
     clientes.value = response.data;
 
-
     Budget.value = response.data[2].budget;
     console.log(Budget.value);
 
@@ -26,7 +25,6 @@ const obtenerClientes = async () => {
 
     invoiced.value = response.data[2].invoiced;
     console.log(invoiced.value);
-    
   } catch (error) {
     console.log(error);
   }
@@ -39,14 +37,27 @@ const expandirCliente = (index) => {
     clienteSeleccionado.value = index;
   }
 };
-
-const eliminarCliente = (index) => {
-  // Lógica para eliminar el cliente
+const indexIsValid = (index) => {
+  return index >= 0 && index < clientes.value.length;
 };
 
-const modificarCliente = (index) => {
-  // Lógica para modificar el cliente
+const eliminarCliente = async (index) => {
+  if (indexIsValid(index)) {
+    const clienteId = clientes.value[index].idcustomer;
+    console.log("ID del cliente a eliminar:", clienteId);
+
+   try {
+      const response = await axios.delete(`http://127.0.0.1:5000/delete/${clienteId}`);
+
+      // Eliminar el cliente de la lista local en el frontend
+      clientes.value.splice(index, 1);
+    } catch (error) {
+      console.log(error);
+    }
+  }
 };
+
+const modificarCliente = (index) => {};
 
 obtenerClientes();
 </script>
@@ -73,10 +84,14 @@ obtenerClientes();
             <button class="w-25" @click="expandirCliente(index)">
               {{ clienteSeleccionado === index ? "ocultar" : "mostrar" }}
             </button>
-            <button class="w-25" @click="eliminarCliente(index)">
+            <button
+              class="w-25"
+              @click="eliminarCliente(index)"
+              v-if="indexIsValid(index)"
+            >
               Eliminar
             </button>
-            <button class="w-25" @click="modificarCliente(index)">
+            <button class="w-25" @click="eliminarCliente(index)">
               Modificar
             </button>
           </td>
@@ -104,41 +119,41 @@ obtenerClientes();
               <td>{{ clientes[clienteSeleccionado].postal_code }}</td>
             </tr>
             <tr class="d-flex flex-column">
-  <th>Presupuesto enviado</th>
-  <td>
-    <input type="radio" id="enviado-si" value="Sí"  >
-    <label for="enviado-si">Sí</label>
-    <input type="radio" id="enviado-no" value="No"  >
-    <label for="enviado-no">No</label>
-  </td>
-</tr>
-<tr class="d-flex flex-column">
-  <th>Presupuesto aceptado</th>
-  <td>
-    <input type="radio" id="aceptado-si" value="Sí" >
-    <label for="aceptado-si">Sí</label>
-    <input type="radio" id="aceptado-no" value="No" >
-    <label for="aceptado-no">No</label>
-  </td>
-</tr>
-<tr class="d-flex flex-column">
-  <th>Finalizado</th>
-  <td>
-    <input type="radio" id="finalizado-si" value="Sí" >
-    <label for="finalizado-si">Sí</label>
-    <input type="radio" id="finalizado-no" value="No" >
-    <label for="finalizado-no">No</label>
-  </td>
-</tr>
-<tr class="d-flex flex-column">
-  <th>Facturado</th>
-  <td>
-    <input type="radio" id="facturado-si" value="Sí" >
-    <label for="facturado-si">Sí</label>
-    <input type="radio" id="facturado-no" value="No" >
-    <label for="facturado-no">No</label>
-  </td>
-</tr>
+              <th>Presupuesto enviado</th>
+              <td>
+                <input type="radio" id="enviado-si" value="Sí" />
+                <label for="enviado-si">Sí</label>
+                <input type="radio" id="enviado-no" value="No" />
+                <label for="enviado-no">No</label>
+              </td>
+            </tr>
+            <tr class="d-flex flex-column">
+              <th>Presupuesto aceptado</th>
+              <td>
+                <input type="radio" id="aceptado-si" value="Sí" />
+                <label for="aceptado-si">Sí</label>
+                <input type="radio" id="aceptado-no" value="No" />
+                <label for="aceptado-no">No</label>
+              </td>
+            </tr>
+            <tr class="d-flex flex-column">
+              <th>Finalizado</th>
+              <td>
+                <input type="radio" id="finalizado-si" value="Sí" />
+                <label for="finalizado-si">Sí</label>
+                <input type="radio" id="finalizado-no" value="No" />
+                <label for="finalizado-no">No</label>
+              </td>
+            </tr>
+            <tr class="d-flex flex-column">
+              <th>Facturado</th>
+              <td>
+                <input type="radio" id="facturado-si" value="Sí" />
+                <label for="facturado-si">Sí</label>
+                <input type="radio" id="facturado-no" value="No" />
+                <label for="facturado-no">No</label>
+              </td>
+            </tr>
 
             <tr class="d-flex flex-column">
               <th>Fecha</th>
