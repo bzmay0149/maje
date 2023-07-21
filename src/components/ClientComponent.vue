@@ -121,36 +121,36 @@ obtenerClientes();
             <tr class="d-flex flex-column">
               <th>Presupuesto enviado</th>
               <td>
-                <input type="radio" id="enviado-si" value="Sí" />
-                <label for="enviado-si">Sí</label>
-                <input type="radio" id="enviado-no" value="No" />
-                <label for="enviado-no">No</label>
-              </td>
+          <input type="radio" id="enviado-si" value="yes"   :checked="clientes[clienteSeleccionado].budget === 'yes'" />
+          <label for="enviado-si">Sí</label>
+          <input type="radio" id="enviado-no" value="no"  :checked="clientes[clienteSeleccionado].budget === 'no'" />
+          <label for="enviado-no">No</label>
+        </td>
             </tr>
             <tr class="d-flex flex-column">
               <th>Presupuesto aceptado</th>
               <td>
-                <input type="radio" id="aceptado-si" value="Sí" />
+                <input type="radio" id="aceptado-si" value="Sí"  :checked="clientes[clienteSeleccionado].budget === 'yes'"/>
                 <label for="aceptado-si">Sí</label>
-                <input type="radio" id="aceptado-no" value="No" />
+                <input type="radio" id="aceptado-no" value="No" :checked="clientes[clienteSeleccionado].budget === 'no'" />
                 <label for="aceptado-no">No</label>
               </td>
             </tr>
             <tr class="d-flex flex-column">
               <th>Finalizado</th>
               <td>
-                <input type="radio" id="finalizado-si" value="Sí" />
+                <input type="radio" id="finalizado-si" value="Sí" :checked="clientes[clienteSeleccionado].budget === 'yes'" />
                 <label for="finalizado-si">Sí</label>
-                <input type="radio" id="finalizado-no" value="No" />
+                <input type="radio" id="finalizado-no" value="No" :checked="clientes[clienteSeleccionado].budget === 'no'" />
                 <label for="finalizado-no">No</label>
               </td>
             </tr>
             <tr class="d-flex flex-column">
               <th>Facturado</th>
               <td>
-                <input type="radio" id="facturado-si" value="Sí" />
-                <label for="facturado-si">Sí</label>
-                <input type="radio" id="facturado-no" value="No" />
+                <input type="radio" id="facturado-si" value="Sí" :checked="clientes[clienteSeleccionado].budget === 'yes'"  />
+                <label for="facturado-si ">Sí</label>
+                <input type="radio" id="facturado-no" value="No" :checked="clientes[clienteSeleccionado].budget === 'no'"  />
                 <label for="facturado-no">No</label>
               </td>
             </tr>

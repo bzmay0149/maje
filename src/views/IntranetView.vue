@@ -1,6 +1,6 @@
 <template>
   <div class="mt-5">
-    <div class="link_intranet border border-4 mb-5 d-flex justify-content-evenly ">
+    <div class="link_intranet mb-5 d-flex justify-content-evenly ">
     <button
       id="clientes"
       @click="handlemostrarclientes"
