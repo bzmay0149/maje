@@ -46,8 +46,10 @@ const eliminarCliente = async (index) => {
     const clienteId = clientes.value[index].idcustomer;
     console.log("ID del cliente a eliminar:", clienteId);
 
-   try {
-      const response = await axios.delete(`http://127.0.0.1:5000/delete/${clienteId}`);
+    try {
+      const response = await axios.delete(
+        `http://127.0.0.1:5000/delete/${clienteId}`
+      );
 
       // Eliminar el cliente de la lista local en el frontend
       clientes.value.splice(index, 1);
@@ -56,30 +58,30 @@ const eliminarCliente = async (index) => {
     }
   }
 };
+//////////////////////// actualizar inputs /////////////////////////
 
-const modificarCliente = (index) => {};
-
+const guardarCambios = async () => {
+  const cliente = clientes.value[clienteSeleccionado.value];
+  try {
+    await axios.put(`http://127.0.0.1:5000/update/${cliente.idcustomer}`, cliente);
+  } catch (error) {
+    console.log(error);
+  }
+};
 obtenerClientes();
 </script>
 
 <template>
   <div>
     <table class="table">
-      <thead>
-        <tr>
-          <th>Nombre</th>
-          <th>Apellido</th>
-          <th>Teléfono</th>
-          <th>Email</th>
-          <th>Acciones</th>
-        </tr>
-      </thead>
+      <!-- ... Your table headers ... -->
       <tbody class="table-border-bottom-0">
         <tr v-for="(cliente, index) in clientes" :key="index">
           <td>{{ cliente.name }}</td>
           <td>{{ cliente.lastname }}</td>
           <td>{{ cliente.phone }}</td>
           <td>{{ cliente.email }}</td>
+          <!-- ... Other table data ... -->
           <td class="d-flex justify-content-around">
             <button class="w-25" @click="expandirCliente(index)">
               {{ clienteSeleccionado === index ? "ocultar" : "mostrar" }}
@@ -91,7 +93,7 @@ obtenerClientes();
             >
               Eliminar
             </button>
-            <button class="w-25" @click="eliminarCliente(index)">
+            <button class="w-25" @click="modificarCliente(index)">
               Modificar
             </button>
           </td>
@@ -121,36 +123,90 @@ obtenerClientes();
             <tr class="d-flex flex-column">
               <th>Presupuesto enviado</th>
               <td>
-          <input type="radio" id="enviado-si" value="yes"   :checked="clientes[clienteSeleccionado].budget === 'yes'" />
-          <label for="enviado-si">Sí</label>
-          <input type="radio" id="enviado-no" value="no"  :checked="clientes[clienteSeleccionado].budget === 'no'" />
-          <label for="enviado-no">No</label>
-        </td>
+                <input
+                  type="radio"
+                  id="enviado-si"
+                  value="yes"
+                  v-model="clientes[clienteSeleccionado].budget"
+                  @change="guardarCambios"
+                />
+                <label for="enviado-si">Sí</label>
+                <input
+                  type="radio"
+                  id="enviado-no"
+                  value="no"
+                  v-model="clientes[clienteSeleccionado].budget"
+                  @change="guardarCambios"
+                />
+                <label for="enviado-no">No</label>
+              </td>
             </tr>
+
+            <!-- Presupuesto aceptado -->
             <tr class="d-flex flex-column">
               <th>Presupuesto aceptado</th>
               <td>
-                <input type="radio" id="aceptado-si" value="Sí"  :checked="clientes[clienteSeleccionado].budget === 'yes'"/>
+                <input
+                  type="radio"
+                  id="aceptado-si"
+                  value="yes"
+                  v-model="clientes[clienteSeleccionado].accepted_budget"
+                  @change="guardarCambios"
+                />
                 <label for="aceptado-si">Sí</label>
-                <input type="radio" id="aceptado-no" value="No" :checked="clientes[clienteSeleccionado].budget === 'no'" />
+                <input
+                  type="radio"
+                  id="aceptado-no"
+                  value="no"
+                  v-model="clientes[clienteSeleccionado].accepted_budget"
+                  @change="guardarCambios"
+                />
                 <label for="aceptado-no">No</label>
               </td>
             </tr>
+
+            <!-- Finalizado -->
             <tr class="d-flex flex-column">
               <th>Finalizado</th>
               <td>
-                <input type="radio" id="finalizado-si" value="Sí" :checked="clientes[clienteSeleccionado].budget === 'yes'" />
+                <input
+                  type="radio"
+                  id="finalizado-si"
+                  value="yes"
+                  v-model="clientes[clienteSeleccionado].done"
+                  @change="guardarCambios"
+                />
                 <label for="finalizado-si">Sí</label>
-                <input type="radio" id="finalizado-no" value="No" :checked="clientes[clienteSeleccionado].budget === 'no'" />
+                <input
+                  type="radio"
+                  id="finalizado-no"
+                  value="no"
+                  v-model="clientes[clienteSeleccionado].done"
+                  @change="guardarCambios"
+                />
                 <label for="finalizado-no">No</label>
               </td>
             </tr>
+
+            <!-- Facturado -->
             <tr class="d-flex flex-column">
               <th>Facturado</th>
               <td>
-                <input type="radio" id="facturado-si" value="Sí" :checked="clientes[clienteSeleccionado].budget === 'yes'"  />
-                <label for="facturado-si ">Sí</label>
-                <input type="radio" id="facturado-no" value="No" :checked="clientes[clienteSeleccionado].budget === 'no'"  />
+                <input
+                  type="radio"
+                  id="facturado-si"
+                  value="yes"
+                  v-model="clientes[clienteSeleccionado].invoiced"
+                  @change="guardarCambios"
+                />
+                <label for="facturado-si">Sí</label>
+                <input
+                  type="radio"
+                  id="facturado-no"
+                  value="no"
+                  v-model="clientes[clienteSeleccionado].invoiced"
+                  @change="guardarCambios"
+                />
                 <label for="facturado-no">No</label>
               </td>
             </tr>
