@@ -14,16 +14,16 @@
         <div class="navbar-links">
           <ul class="navbar-nav d-flex flex-row">
             <li class="nav-item">
-              <router-link to="/" class="nav-link">Inicio</router-link>
+              <router-link to="/" class="nav-link">{{ $t('navbar.home') }}</router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/services" class="nav-link">Servicios</router-link>
+              <router-link to="/services" class="nav-link">{{ $t('navbar.about') }}</router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/about" class="nav-link">Contacto</router-link>
+              <router-link to="/about" class="nav-link">{{ $t('navbar.contact') }}</router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/login" class="nav-link">Administrador</router-link>
+              <router-link to="/login" class="nav-link">{{ $t('navbar.admin') }}</router-link>
             </li>
            
           </ul>
