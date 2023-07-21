@@ -28,11 +28,11 @@
     </div>
   </div> -->
 
-  <div class="row justify-content-evenly">
+  <div class="row justify-content-evenly home">
     <div class="col-md-6">
       <img
         class="img-fluid  mx-auto p-3 mt-5  d-block"
-        src="../assets/surgery-room.jpg"
+        src="../assets/herramientas.jpg"
         alt=""
       />
     </div>
@@ -56,6 +56,7 @@ Fabricación,montaje e instalación de mobiliario y elementos de carpintería. D
 <script setup></script>
 
 <style scoped>
+
 
 
 .mobile-text{
