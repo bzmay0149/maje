@@ -145,7 +145,7 @@ iframe{
         /* max-width: fit-content;
         max-height: fit-content; */
         flex-direction: column;
-        background-color: #D8C3A5;
+        background-color: rgb(75, 15, 15);
         align-items: center;
         padding-bottom: 1rem;
     }

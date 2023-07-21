@@ -6,11 +6,19 @@
     <nav class="navbar navbar-light">
       <div class="navbar-content">
         <div class="navbar-logo">
+          <div>
           <router-link to="/" class="navbar-brand">
             <img src="../assets/logo-zurtek.png" alt="logo-zurtek" width="160">
-          </router-link>
-        </div>
+          </router-link></div>
+          
         
+          <div class="d-flex justify-content-end mx-3">
+  
+    <select v-model="$i18n.locale">
+      <option v-for="locale in $i18n.availableLocales" :key="`locale-${locale}`" :value="locale">{{ locale }}</option>
+    </select>
+ 
+</div></div>
         <div class="navbar-links">
           <ul class="navbar-nav d-flex flex-row">
             <li class="nav-item">
@@ -88,6 +96,10 @@
  
   margin-left: auto;
   margin-right: auto;
+}
+select{
+  background-color: rgb(75, 15, 15);
+  color: #f1ece6;
 }
 
 

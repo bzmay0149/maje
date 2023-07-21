@@ -1,6 +1,6 @@
 <template>
-
-  <div class="d-flex align-items-center justify-content-center vh-100">
+<div>
+  <div class="my-5">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-8">
@@ -44,7 +44,7 @@
       </div>
     </div>
   </div>
-
+</div>
 </template>
 <script>
 import emailjs from '@emailjs/browser';

@@ -43,7 +43,7 @@ export const messages = {
             home: 'Hasiera',
             about: 'Zerbitzuak',
             contact: 'Kontaktua',
-            admin: 'kudeatzailea'
+            admin: 'Kudeatzailea'
 
         },
 
