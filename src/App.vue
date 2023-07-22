@@ -16,7 +16,6 @@ import FooterComp from "./components/FooterComp.vue";
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   box-sizing: border-box;
-  min-height: 100vh;
 }
 
 nav {

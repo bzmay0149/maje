@@ -13,7 +13,7 @@
             </router-link>
           </div>
           <!-- utilizamos la libreria i18n  para cambiar el idioma del sitio web -->
-          <div class="d-flex justify-content-end mx-3">
+          <div class="d-flex justify-content-end mx-4 mx-mobile">
             <select v-model="$i18n.locale">
               <option
                 v-for="locale in $i18n.availableLocales"
@@ -110,6 +110,9 @@ select {
 @media (max-width: 680px) {
   .nav-link {
     font-size: medium;
+  }
+  .mx-mobile {
+    margin-right: 0;
   }
 }
 </style>

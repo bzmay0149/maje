@@ -29,7 +29,6 @@ const handleSubmit = async () => {
 };
 </script>
 
-
 <template>
   <!-- <div class="w-50  mx-auto mb-5">
     <h3 class="mt-5">Login Administrador</h3>
@@ -53,32 +52,47 @@ const handleSubmit = async () => {
     </div>
 
   </div> -->
- <!-- -------------------------------------------veo-----------  -->
- <div class="my-5">
+  <!-- -------------------------------------------veo-----------  -->
+  <div class="my-5">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-5">
           <div class="card">
             <div class="card-header">
-              <h3 class="card-title">Login Administrador</h3>
+              <h3 class="card-title">{{ $t("admin.title") }}</h3>
             </div>
-            
+
             <div class="card-body">
               <div class="form-group text-start">
-                <label class="form-label" for="username">Nombre de usuario</label>
-        <input
-          class="form-control w-100 mx-auto"
-          name="username" type="text" v-model="username"
-        />
+                <label class="form-label" for="username">{{
+                  $t("admin.name")
+                }}</label>
+                <input
+                  class="form-control w-100 mx-auto"
+                  name="username"
+                  type="text"
+                  v-model="username"
+                />
               </div>
 
               <div class="form-group text-start mb-3">
-                <label class="form-label" for="password">Contraseña</label>
-        <input class="form-control w-100 mx-auto" name="password" type="password" v-model="password" />
+                <label class="form-label" for="password">{{
+                  $t("admin.password")
+                }}</label>
+                <input
+                  class="form-control w-100 mx-auto"
+                  name="password"
+                  type="password"
+                  v-model="password"
+                />
               </div>
 
-            
-              <input class="btn col-12" id="button"  @click="handleSubmit" value="Iniciar Sesion" >
+              <input
+                class="btn col-12"
+                id="button"
+                @click="handleSubmit"
+                :value="$t('admin.session')"
+              />
             </div>
           </div>
         </div>
@@ -86,9 +100,6 @@ const handleSubmit = async () => {
     </div>
   </div>
 </template>
-
-
-
 
 <style scoped>
 /* .login{
@@ -100,22 +111,22 @@ const handleSubmit = async () => {
   width: 50%;
 } */
 
-
-custom-input{
-margin-left: 0.8rem;
-margin-top: 1.2rem;
-margin-bottom: 1.2rem;
+custom-input {
+  margin-left: 0.8rem;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
 }
 
-.card-header, .btn{
+.card-header,
+.btn {
   background-color: rgb(75, 15, 15);
   color: bisque;
 }
-.card-body{
+.card-body {
   background-color: #f6cea1;
-} 
-.btn:hover{
-   color: bisque;
+}
+.btn:hover {
+  color: bisque;
   background-color: rgb(75, 15, 15);
 }
 </style>
