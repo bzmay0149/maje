@@ -1,121 +1,147 @@
 <template>
   <div class="service-title">
-    <h1>Servicios</h1>
-  </div>  
-<div class="container">
-  <div container--row>
-    <div class="card-group">
-      <div class="card">
-        <img src="../assets/suelo2-43.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Colocación suelo de madera</h5>
-          <p class="card-text">Trabajamos con todo tipo de maderas y tenemos máxima flexibilidad para hacer proyectos personalizados.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-    </div>
-      <div class="card">
-        <img src="../assets/laser-cut-heart43.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Grabado láser</h5>
-          <p class="card-text">Nuestra maquinaría laser nos permite hacer cortes precisos y grabados.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="../assets/laser-wood-cutting.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Corte laser</h5>
-          <p class="card-text">La precisión del laser aplicada al trabajo con madera. El límite es tu imaginación.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-    </div>
+    <h1 class="m-5">{{ $t("services.title") }}</h1>
+    <!-- <h2>Zurtek es una empresa de inserción donde trabajamos la madera y sus derivados realizando muebles e instalaciones de calidad y diseño, tanto con materiales tradicionales como innovadores. Atendemos las necesidades tanto del hogar, como de locales comerciales, como oficinas y empresas constructoras.
+</h2> -->
   </div>
-  <div container--row>
-    <div class="card-group">
-      <div class="card">
-        <img src="../assets/Phenolic-board-sevilla.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Paneles fenólicos</h5>
-          <p class="card-text">Tenemos todo el instrumental para realizar trabajo con paneles fenólicos.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  <div class="container">
+    <div container--row>
+      <div class="card-group gap-5 mb-5">
+        <div class="card">
+          <img src="../assets/baño43n.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">{{ $t("services.title1") }}</h5>
+          </div>
         </div>
-    </div>
-      <div class="card">
-        <img src="../assets/laser-wood43.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Mecanizado laser</h5>
-          <p class="card-text">Alta precisión en la confección de las piezas necesarias para tu proyecto.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <div class="card">
+          <img
+            src="../assets/juego-mesitas-sala43n.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">{{ $t("services.title2") }}</h5>
+          </div>
         </div>
-      </div>
-      <div class="card">
-        <img src="../assets/kitchen-halfdone43.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Montaje de cocinas</h5>
-          <p class="card-text">Montamos y diseñamos cocinas</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-    </div>
-  <div container--row>
-    <div class="card-group">
-      <div class="card">
-        <img src="../assets/drawer-installation43.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Montaje y diseño a medida de muebles</h5>
-          <p class="card-text">Montamos y diseñamos muebles a medida.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-    </div>
-      <div class="card">
-        <img src="../assets/vertical-farm-hydroponics43.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Diseñamos huertos verticales</h5>
-          <p class="card-text">Realizamos proyectos para jardines y huertos verticales.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <div class="card">
+          <img
+            src="../assets/mesa-mundo43n.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">{{ $t("services.title3") }}</h5>
+          </div>
         </div>
       </div>
-      <div class="card">
+    </div>
+    <div container--row>
+      <div class="card-group gap-5 mb-5">
+        <div class="card">
+          <img
+            src="../assets/Phenolic-board-sevilla.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">{{ $t("services.title4") }}</h5>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="../assets/surgery-room43.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">{{ $t("services.title5") }}</h5>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="../assets/mueble-aparador43n.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">{{ $t("services.title6") }}</h5>
+          </div>
+        </div>
+      </div>
+      <div container--row>
+        <div class="card-group gap-5 mb-5">
+          <div class="card">
+            <img
+              src="../assets/mueble-pan43n.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">{{ $t("services.title7") }}</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="../assets/muebles-despacho-oficina43n.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">{{ $t("services.title8") }}</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="../assets/puertascorrederas43n.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">{{ $t("services.title9") }}</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="card">
         <img class="zurtek43serv" src="../assets/logo-zurtek43.png" alt="..." >
         <div class="card-body">
           <h5 class="card-title">¿Tienes una idea?</h5>
-          <p class="card-text">Te ayudamos a llevar cualquier idea  acabo, sea pequeña o grande, tenemos la capacidad de prototipar, presupuestar y acompañarte en todo el proceso de creación.</p>
+          <p class="card-text">Te ayudamos a llevarla acabo. Sea pequeña o grande, tenemos la capacidad de prototipar, presupuestar y acompañarte en todo el proceso de creación.</p>
           <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
+        </div> -->
+    </div>
+  </div>
+
+  <div class="centered-card">
+    <div class="card logo" style="width: 24rem">
+      <img class="zurtek43serv" src="../assets/logo-services.png" alt="..." />
+      <div class="card-body" style="width: 24rem">
+        <h5 class="card-title">{{ $t("services.title10") }}</h5>
+        <p class="card-text mb-4 alinear">{{ $t("services.title11") }}.</p>
       </div>
     </div>
   </div>
-  </div>
-    
-
-</div>
-    
-
-    
-
-        
-
-
-
-
-    
-    
 </template>
 
-<script setup>
-
-
-</script >
-
+<script setup></script>
 
 <style scoped>
-.service-tittle{
+.centered-card {
+  width: 24rem;
+  margin: 0 auto; /* Esto centrará horizontalmente la tarjeta */
+}
+
+.card {
+  border: none;
+}
+.service-tittle {
   margin: 7rem 0;
 }
-.zurtek43serv{
-  border: solid 0.01rem  rgb(224, 215, 215);
+.alinear {
+  text-align: justify;
 }
+
 /* .container {
     display: flex;
 
@@ -124,4 +150,11 @@
     margin-left: auto;
     margin-right: auto;
 } */
+
+@media (max-width: 680px) {
+  .zurtek43serv {
+    width: 18rem;
+    margin: auto;
+  }
+}
 </style>
