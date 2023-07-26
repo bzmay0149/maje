@@ -3,7 +3,7 @@
     <div class="col-md-6">
       <img
         class="img-fluid mx-auto p-3 mt-5 d-block"
-        src="../assets/surgery-room.jpg"
+        src="../assets/herramientas.jpg"
         alt=""
       />
     </div>
